@@ -54,7 +54,7 @@ int main(int argc, char **argv) {
       // Shift up by 1 for each bit set
 
 
-    strncpy(fmt,fmts + start,length);
+    strncpy(fmt,&fmts[start],length);
     fmt[length] = '\0';
 
     printf(fmt,i);
